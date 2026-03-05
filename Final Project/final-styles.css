@@ -24,3 +24,9 @@ main {
 main .about-photo {
   width: 400px;
 }
+main article {
+  margin-bottom: 15px;
+}
+main article img {
+  width: 500px;
+}
