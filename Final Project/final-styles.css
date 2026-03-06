@@ -26,7 +26,37 @@ main .about-photo {
 }
 main article {
   margin-bottom: 15px;
+  background-color: blue;
+  display: flex;
+  font-family: "Century";
+  height: 515px;
 }
 main article img {
   width: 500px;
+  align-self: center;
+  scroll-snap-align: center;
+  scrollbar-color: #5f5f5f;
+}
+main article .tech {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 500px;
+  overflow-x: scroll;
+  gap: 5px;
+  scroll-snap-type: both mandatory;
+}
+main article .mount {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 500px;
+  overflow-x: scroll;
+  gap: 5px;
+  scroll-snap-type: both mandatory;
+}
+main article .format {
+  width: 50%;
+}
+footer {
+  font-family: "Engravers MT", serif;
+  text-align: center;
 }
