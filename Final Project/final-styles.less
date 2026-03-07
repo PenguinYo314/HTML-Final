@@ -1,7 +1,7 @@
 body{
     background-color: rgb(95, 95, 95);
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
 }
 header{
     background-color: rgb(70, 70, 70);
@@ -10,30 +10,62 @@ header{
     width: 100%;
     height: 5em;
     margin: 0;
+    text-align: center;
+    h1{
+        font-family: "Bauhaus 93";
+        font-size: 4em;
+        margin: 0;
+    }
 }
 nav{
     height: 50px;
     width: 100%;
     background-color: rgb(44, 44, 44);
     border-radius: 25px;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    a{
+        margin: 0 20px;
+        font-size: 1.5em;
+        color: aqua;
+    }
+    a:visited{
+        color: coral;
+    }
+}
+a{
+    color: aqua;
+}
+a:visited{
+    color: coral;
 }
 main{
-    background-color: grey;
-    border-radius: 20px;
+    text-align: center;
     .about-photo{
         width: 400px;
     }
     article{
         margin-bottom: 15px;
-        background-color: blue;
+        background-color: grey;
         display: flex;
         font-family: "Century"; 
         height: 515px;
+        border-radius: 20px;
+        text-align: left;
         img{
             width: 500px;
             align-self: center;
             scroll-snap-align: center;
             scrollbar-color: rgb(95,95,95);
+        }
+        .imgwrap{
+            width: 500px;
+            background-color: rgb(62, 62, 62);
+            border-radius: 30px;
+            justify-content: center;
+            display: flex;
         }
         .tech{
             display: grid;
@@ -42,6 +74,8 @@ main{
             overflow-x: scroll;
             gap: 5px;
             scroll-snap-type: both mandatory;
+            background-color: rgb(62, 62, 62);
+            border-radius: 30px;
         }
         .mount{
             display: grid;
@@ -50,13 +84,30 @@ main{
             overflow-x: scroll;
             gap: 5px;
             scroll-snap-type: both mandatory;
+            background-color: rgb(62, 62, 62);
         }
         .format{
             width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                justify-self: center
+            }
+        }
+        object{
+            border-radius: 10px;
         }
     }
 }
 footer{
     font-family: "Engravers MT", serif;
     text-align: center;
+    background-color: rgb(70, 70, 70);
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 2em ;
+    p{
+        margin-bottom: 0;
+        
+    }
 }

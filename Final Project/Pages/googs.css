@@ -1,0 +1,193 @@
+body {
+  background-color: white;
+}
+header {
+  background-color: #f8fafd;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+header label {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  height: 48px;
+}
+header h1 {
+  display: inline-block;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #444746;
+  margin-bottom: 25px;
+  margin-left: 50px;
+}
+header img {
+  height: 28px;
+  margin: 0 16px -5px;
+}
+header .plus {
+  position: absolute;
+  right: 10px;
+}
+nav {
+  position: fixed;
+  width: 500px;
+  background-color: #f8fafd;
+  top: 81px;
+  bottom: 0;
+  left: 0;
+}
+nav a {
+  font-family: Roboto, Arial, sans-serif;
+  border: solid transparent 3px;
+  border-radius: 2em;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 2px;
+  width: 290px;
+}
+nav a img {
+  width: 45px;
+  margin: 0 10px;
+}
+nav a .smolrock {
+  border-radius: 2em;
+}
+nav a:hover {
+  background-color: #c6daf9;
+  border: solid #566e93 3px;
+}
+nav p {
+  font-family: Roboto, Arial, sans-serif;
+  margin-left: 5em;
+}
+main {
+  position: fixed;
+  left: 75px;
+  top: 80px;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 1.5rem;
+  transition: all 1s;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+main article {
+  position: relative;
+  border: black 0.5px solid;
+  border-radius: 3em;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  font-family: Roboto, Arial, sans-serif;
+  margin: 10px 50px;
+}
+main article div {
+  width: 400px;
+  border-bottom: solid black 0.5px;
+  border-radius: 3em 3em 0 0;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+main article img {
+  border-radius: 3em;
+  width: 200px;
+}
+main article h2 {
+  position: absolute;
+  bottom: 40px;
+}
+main article h3 {
+  position: absolute;
+  bottom: 20px;
+}
+main .screencover {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(81, 81, 81, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+main input {
+  background-color: #f8fafd;
+  width: 10em;
+  height: 2em;
+  text-align: center;
+}
+main .screencover > div {
+  background-color: white;
+  height: 15em;
+  width: 25em;
+  border-radius: 5em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: Roboto, Arial, sans-serif;
+}
+main .screencover > div p {
+  font-size: 2em;
+}
+.dingus:not(:checked) + nav a {
+  color: transparent;
+  width: 55px;
+  padding-right: 10px;
+}
+.dingus:checked + nav {
+  padding-right: 10px;
+}
+.dingus:checked + nav + main {
+  left: 300px;
+  transition: all 1s;
+}
+input [type="checkbox"] {
+  position: fixed;
+  left: -20em;
+}
+.suker {
+  position: fixed;
+  left: -20em;
+}
+.suker:checked + div {
+  opacity: 1;
+  pointer-events: all;
+}
+.screencover label {
+  font-size: 1.5em;
+}
+.cancel {
+  background-color: #f8fafd;
+  border: solid 3px grey;
+  border-radius: 2em;
+  padding: 5px;
+}
+.confirm {
+  border: 3px solid #566e93;
+  color: white;
+  background-color: navy;
+  border-radius: 2em;
+  padding: 5px;
+  margin-right: 50px;
+}
+.screencover > div {
+  position: relative;
+}
+.buttons {
+  position: absolute;
+  bottom: 50px;
+}

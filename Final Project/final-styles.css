@@ -1,7 +1,7 @@
 body {
   background-color: #5f5f5f;
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
 }
 header {
   background-color: #464646;
@@ -10,32 +10,64 @@ header {
   width: 100%;
   height: 5em;
   margin: 0;
+  text-align: center;
+}
+header h1 {
+  font-family: "Bauhaus 93";
+  font-size: 4em;
+  margin: 0;
 }
 nav {
   height: 50px;
   width: 100%;
   background-color: #2c2c2c;
   border-radius: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav a {
+  margin: 0 20px;
+  font-size: 1.5em;
+  color: aqua;
+}
+nav a:visited {
+  color: coral;
+}
+a {
+  color: aqua;
+}
+a:visited {
+  color: coral;
 }
 main {
-  background-color: grey;
-  border-radius: 20px;
+  text-align: center;
 }
 main .about-photo {
   width: 400px;
 }
 main article {
   margin-bottom: 15px;
-  background-color: blue;
+  background-color: grey;
   display: flex;
   font-family: "Century";
   height: 515px;
+  border-radius: 20px;
+  text-align: left;
 }
 main article img {
   width: 500px;
   align-self: center;
   scroll-snap-align: center;
   scrollbar-color: #5f5f5f;
+}
+main article .imgwrap {
+  width: 500px;
+  background-color: #3e3e3e;
+  border-radius: 30px;
+  justify-content: center;
+  display: flex;
 }
 main article .tech {
   display: grid;
@@ -44,6 +76,8 @@ main article .tech {
   overflow-x: scroll;
   gap: 5px;
   scroll-snap-type: both mandatory;
+  background-color: #3e3e3e;
+  border-radius: 30px;
 }
 main article .mount {
   display: grid;
@@ -52,11 +86,27 @@ main article .mount {
   overflow-x: scroll;
   gap: 5px;
   scroll-snap-type: both mandatory;
+  background-color: #3e3e3e;
 }
 main article .format {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main article .format p {
+  justify-self: center;
+}
+main article object {
+  border-radius: 10px;
 }
 footer {
   font-family: "Engravers MT", serif;
   text-align: center;
+  background-color: #464646;
+  border-top-left-radius: 20px ;
+  border-top-right-radius: 2em ;
+}
+footer p {
+  margin-bottom: 0;
 }
