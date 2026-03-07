@@ -26,6 +26,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Century";
 }
 nav a {
   margin: 0 20px;
@@ -43,9 +44,17 @@ a:visited {
 }
 main {
   text-align: center;
+  font-family: "Century";
 }
 main .about-photo {
   width: 400px;
+}
+main .aboutp {
+  text-align: left;
+  width: 80%;
+  align-self: center;
+  position: relative;
+  left: 10%;
 }
 main article {
   margin-bottom: 15px;
